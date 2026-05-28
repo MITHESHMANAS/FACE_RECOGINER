@@ -4,7 +4,7 @@
 import cv2
 import os
 
-face_classifier = cv2.CascadeClassifier("data.xml")
+face_classifier = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 
 name = input("Enter the name of person : ")
 
