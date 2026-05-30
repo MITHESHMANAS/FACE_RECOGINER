@@ -9,9 +9,10 @@ while True:
     
     cv2.imshow("video frame",frame)
   
-    key_pressed = cv2.waitKey(1) & 0xFF
-    
-    if key_pressed == ord('q'):
+    key = cv2.waitKey(10)
+
+    if key == ord('q'):
+        print("Exiting...")
         break
     
 cap.release()
